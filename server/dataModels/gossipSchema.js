@@ -16,6 +16,10 @@ const gossipSchema = new mongoose.Schema({
     created_at:{
         type: Date,
         default: Date.now
+    },
+    secret:{
+        type: String,
+        required: true
     }
 
 })
